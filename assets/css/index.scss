@@ -1,0 +1,57 @@
+body {
+
+  .container {
+
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 50px;
+
+    .slider{
+        height: 500px;
+      img {
+        max-width: 100%;
+        display: none;
+
+
+        &.active {
+          display: block;
+          animation: fade .8s;
+        }
+
+        @keyframes fade {
+          from {
+            opacity: 0;
+          }
+
+          to {
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    .cont-btn {
+
+      width: 100%;
+      height: auto;
+      border: 1px solid #000;
+      display: flex;
+      justify-content: center;
+
+      .btn-nav {
+
+        font-size: 50px;
+        margin: 0 15px;
+        cursor: pointer;
+
+        .left{
+          outline: none;
+        }
+
+        .right {
+          outline: none;
+        }
+      }
+    }
+  }
+}
